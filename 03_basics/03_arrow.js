@@ -32,3 +32,11 @@ const user = {
 
 // chai()
 
+// const addTwo = (num1,num2) => {
+//     return num1 + num2
+// }
+
+// const addTwo = (num1,num2) => (num1 * num2)   // if we use parenthesis no ndee to use retrun keyword
+const addTwo = (num1,num2) => ({userName: "Abhishek"}) // way to return object
+
+console.log(addTwo(1,3));
