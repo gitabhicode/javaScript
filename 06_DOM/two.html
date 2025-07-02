@@ -11,18 +11,18 @@
         <div class="day">Tuesday</div>
         <div class="day">Wednesday</div>
         <div class="day">Thursday</div>
-    </div>
+    </div>  
 </body>
 <script>
    const parent =  document.querySelector('.parent');
-    console.log(parent);
-    console.log(parent.children);
-    // console.log(parent.children[1].innerHTML);
+    console.log(parent);  // it give the class parent
+    console.log(parent.children);  // it gives the HTML collection
+    // console.log(parent.children[1].innerHTML);  // output is tuesday
 
     for(let i=0;i< parent.children.length;i++){
-        console.log(parent.children[i].innerHTML);
+        console.log(parent.children[i].innerHTML);   // it will give form monday to thursday
     }
-    parent.children[1].style.color = "pink"
+    parent.children[1].style.color = "orange"
     console.log(parent.firstElementChild);
     console.log(parent.lastElementChild);
 
@@ -31,7 +31,7 @@
     // console.log(dayOne.parentElement);
     // console.log(dayOne.nextElementSibling);
     
-    console.log("Nodes: " ,parent.childNodes);
+    console.log("Node : " ,parent.childNodes);
     
     
     
