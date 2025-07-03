@@ -68,3 +68,16 @@ const form = document.querySelector('form')
  })
 
 ```
+
+## Project 3 solution
+
+```javaScript
+
+  const clock = document.getElementById('clock');
+
+setInterval(function(){
+  let date = new Date();
+  // console.log(date.toLocaleTimeString());
+  // clock.innerHTML = date.toLocaleTimeString()
+} , 1000)
+```
