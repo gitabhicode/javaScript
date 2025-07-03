@@ -10,4 +10,39 @@
         <li>JavaScript</li>
     </ul>
 </body>
+<script>
+    // create
+
+    function addLanguage(langName){
+       const li = document.createElement('li')  // creating a new element list 
+       li.innerText = `${langName}`  // defining the text insisde it
+       document.querySelector('.language').appendChild(li)   // appending insisde the class langauge
+    }
+    addLanguage("python")   // it is travelling whole the tree to append the new language
+    addLanguage("hello")
+
+    function addOptimisedLanguage(langName){
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langName))   // optimised code it does not travel the whole 
+        document.querySelector('.language').appendChild(li)  // where the new elment must be append
+    }
+    addOptimisedLanguage("JavaScript")
+
+   // edit the element
+
+   const secondLang =  document.querySelector("li:nth-child(2)")
+   //secondLang.innerText = "MOJo" not optimised
+   const newli = document.createElement('li')
+   newli.textContent = "Mojo"
+   secondLang.replaceWith(newli)
+
+  // edit
+  const firstLang = document.querySelector("li:nth-child(1)")
+  firstLang.outerHTML = '<li>TypeScrip</li>'
+
+
+  // removing the elemment
+  const Lang = document.querySelector("li:last-child")
+  Lang.remove()
+</script>
 </html> 
