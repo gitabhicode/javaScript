@@ -1,0 +1,6 @@
+{
+  "name": "JavaScript Dev Container",
+  "extensions": [
+    "ritwickdey.LiveServer"
+  ]
+}
