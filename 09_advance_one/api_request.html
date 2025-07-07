@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+   const requestUrl = 'https://api.github.com/users/gitabhicode'
+   const xhr = new XMLHttpRequest();
+   xhr.open('GET' , requestUrl)  // we have send the request
+   xhr.onreadystatechange = function(){
+    console.log(xhr.readyState);
+    if(xhr.readyState === 4){
+       const data = JSON.parse(this.responseText);   // this is used for current contextl
+       console.log(typeof data);   // console.log is not the part of core javascript  it is provided on runtime
+       console.log(data.following);
+   }
+}
+   
+   xhr.send()
+</script>
+</html>
