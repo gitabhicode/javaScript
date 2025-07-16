@@ -1,4 +1,4 @@
-const descripter = Object.getOwnPropertyDescriptor(Math, "PI")
+ const descripter = Object.getOwnPropertyDescriptor(Math, "PI")
 
 console.log(descripter);
 
@@ -20,7 +20,7 @@ const chai = {
 
 Object.defineProperty(chai, 'name', {
     writable: false,
-    enumerable: false,
+    // enumerable: false,   it is used to iterate in the loop
      
 })
 
